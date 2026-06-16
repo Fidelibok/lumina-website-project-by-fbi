@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-dark: #011801;
+  --light-green: #00ff08;
+  --bs-light: #fff;
+  --bs-black: #000;
+  --bs-light-gray: #dad5d5;
+  --bs-gray: #9a9494;
+  --bs-green: #013701db;
+  --bs-sea-green: #00ff6e;
+  --bs-deep-green: #0080005f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--green-dark);
+}
+
+form {
+  width: 30%;
+  height: 550px;
+  box-shadow: 1px 3px 8px rgba(0, 225, 0, 0.8);
+  border-radius: 7px;
+  background: var(--bs-green);
+  padding: 20px;
+}
+
+form h2 {
+  font-size: clamp(2.5em, 2vh, 2em);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: var(--light-green);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+marquee {
+  font-size: clamp(1.2em, 2vh, 2em);
+  color: var(--bs-light);
+  font-family: sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.7vh;
+  margin-bottom: 5px;
+}
+
+.gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+label {
+  font-size: clamp(1.3em, 2vh, 2em);
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type="radio"]:focus ~ label{
+  font-size: 2px;
+}
+input {
+  width: 100%;
+  height: 40px;
+  padding: 14px;
+  font-size: 19px;
+  border: 1px solid #00000087;
+  margin-bottom: 15px;
+  outline: none;
+  border-radius: 6px;
+  transition: .4s;
+}
+
+input:focus {
+  outline:  2px solid rgb(0, 225, 0);
+}
+.name-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+form .btn {
+  width: 100%;
+  height: 45px;
+  background: var(--light-green);
+  border: none;
+  border-radius: 9px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px auto;
+  transition: .3s;
+
+}
+
+form .btn a {
+  color: var(--bs-light);
+  cursor: pointer;
+  text-decoration: none;
+}
+form .btn:hover {
+  background: transparent;
+  border: 1px solid var(--light-green);
+  transition-timing-function: ease;
+}
+
+@media (max-width: 1100px) {
+  
+:root {
+  --green-dark: #011801;
+  --light-green: #00ff08;
+  --bs-light: #fff;
+  --bs-black: #000;
+  --bs-light-gray: #dad5d5;
+  --bs-gray: #9a9494;
+  --bs-green: #013701db;
+  --bs-sea-green: #00ff6e;
+  --bs-deep-green: #0080005f;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bs-deep-green);
+}
+
+form {
+  width: 40%;
+  height: 500px;
+  box-shadow: 1px 3px 8px rgba(0, 225, 0, 0.8);
+  border-radius: 7px;
+  background: var(--green-dark);
+  padding: 20px;
+}
+
+form h2 {
+  font-size: clamp(1.7em, 2vh, 2em);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: var(--light-green);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+marquee {
+  font-size: clamp(1em, 2vh, 2em);
+  color: var(--bs-light);
+  font-family: sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.5vh;
+  margin-bottom: 5px;
+}
+
+.gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+label {
+  font-size: clamp(1.3em, 2vh, 2em);
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type="radio"]:focus ~ label{
+  font-size: 2px;
+}
+input {
+  width: 100%;
+  height: 35px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #00000087;
+  margin-bottom: 6px;
+  outline: none;
+  border-radius: 6px;
+  transition: .4s;
+}
+
+input:focus {
+  outline:  2px solid rgb(0, 225, 0);
+}
+.name-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+  width: 100%;
+}
+
+form .btn {
+  width: 50%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-self: center;
+  background: var(--light-green);
+  border: none;
+  border-radius: 9px;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px auto;
+  transition: .3s;
+  margin-top: 8px;
+}
+
+form .btn a {
+  color: var(--green-dark);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form .btn a:hover{
+  color: var(--bs-light);
+}
+form .btn:hover {
+  background: transparent;
+  border: 1px solid var(--light-green);
+  transition-timing-function: ease;
+}
+}
